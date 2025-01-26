@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .h{
+            font-size: 3rem;
+            text-align: center;
+            margin: 1rem 0;
+            text-decoration: underline  wavy darkturquoise;
+        }
+        .about{
+            padding: 80px 10px;
+            background-color: black;
+        }
+        .t{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        .t::before{
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            background-color: aquamarine;
+            left: calc(50% - 1px);
+        }
+        .i{
+            margin-bottom: 8px;
+            width: 100%;
+            position: relative;
+        }
+        .i:last-child{
+            margin-bottom: 0;
+        }
+        .i:nth-child(odd){
+            padding-right: calc(50% + 30px);
+            text-align: right;
+        }
+        .i:nth-child(even){
+            padding-left: calc(50% + 30px);
+        }
+        .d{
+            height: 21px;
+            width: 21px;
+            background-color: aquamarine;
+            box-shadow: 0 0 25px aqua,
+                        0 0 50px aqua;
+            position: absolute;
+            left: calc(50% - 8px);
+            border-radius: 50%;
+            top: 10px;
+        }
+        .c{
+            background-color: black;
+            border: 3px solid aqua;
+            padding: 30px 50px;
+            border-radius: 4rem;
+            box-shadow: 0 0 10px aquamarine;
+        }
+        .c:hover{
+            box-shadow: 10px 10px 20px aquamarine;
+            border: 5px solid aqua;
+            cursor: pointer;
+            
+        }
+        .c p{
+            color: aliceblue;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" >
+            <span class="logol" style="color:aquamarine ;">B</span>
+            <span class="logol">E</span>
+            <span class="logol" style="color:aquamarine ;">N</span>
+        </div>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="#">About Me</a>
+            <a href="projet.html">Project</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <section class="about">
+        <h2 class="h"> Who Am I?</h2>
+        <div class="t">
+            <div class="i">
+                <div class="d"></div>
+                <div class="c">
+                    <p> Hello! I am Kaoutar Ben Hettouch, a passionate digital developer and I am 18 years old. I study at CMC Agadir, where I pursue my education in digital development.</p>
+                </div>
+            </div>
+            <div class="i">
+                <div class="d"></div>
+                <div class="c">
+                    <p>In my free time, I engage in a variety of hobbies that recharge my energy, such as reading novels, especially fantasy novels, which I am passionate about, in addition to watching movies.... </p>
+                </div>
+            </div>
+            <div class="i">
+                <div class="d"></div>
+                <div class="c">
+                    <p>I am excited about the future of web development and look forward to applying my skills in real-world projects. As I continue my education at CMC Agadir, I am eager to collaborate and learn from others and grow to become a good digital developer.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <h3>&copy; B E N | Protfolio Kaoutar Ben hettouch</h3>
+</body>
+</html>

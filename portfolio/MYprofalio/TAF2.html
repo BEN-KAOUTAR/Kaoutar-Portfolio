@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAF</title>
+<style>
+   .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; 
+}
+
+.grid-item {
+    background-color: rgb(243, 148, 196);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #f113a7;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.item1, .item2,.item3,.item4,.item5,.item6{
+    grid-column: span 2;
+}
+.item7,.item8,.item9,.item10{
+    grid-column: span 3;
+}
+.item11,.item12,.item13{
+    grid-column: span 4;
+}
+.item14,.item15{
+    grid-column: span 6;
+}
+.item16{
+    grid-column: span 12;
+}
+@media (max-width: 768px) {
+        .grid-container {
+            grid-template-columns: auto; /* 1 colonne par ligne */
+        }
+
+        .grid-item {
+            grid-column: span 1; /* Chaque élément occupe 1 colonne */
+        }
+    }
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+    <div class="grid-item">7</div>
+    <div class="grid-item">8</div>
+    <div class="grid-item">9</div>
+    <div class="grid-item">10</div>
+    <div class="grid-item">11</div>
+    <div class="grid-item">12</div>
+
+    <div class="grid-item item1">1</div>
+    <div class="grid-item item2">2</div>
+    <div class="grid-item item3">3</div>
+    <div class="grid-item item4">4</div>
+    <div class="grid-item item5">5</div>
+    <div class="grid-item item6">6</div>
+
+    <div class="grid-item item7">1</div>
+    <div class="grid-item item8">2</div>
+    <div class="grid-item item9">3</div>
+    <div class="grid-item item10">4</div>
+
+    <div class="grid-item item11">1</div>
+    <div class="grid-item item12">2</div>
+    <div class="grid-item item13">3</div>
+
+    <div class="grid-item item14">1</div>
+    <div class="grid-item item15">2</div>
+
+    <div class="grid-item item16">1</div>
+</div>
+</body>
+</html>

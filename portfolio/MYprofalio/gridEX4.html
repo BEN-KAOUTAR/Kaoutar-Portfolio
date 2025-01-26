@@ -1,0 +1,45 @@
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(6,2fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        'Header Header Header Header Header Header'
+        'Navigation Main Main Main Main SideBar'
+        'Navigation Main Main Main Main SideBar'
+        'Navigation Main Main Main Main SideBar'
+        'Navigation Main Main Main Main SideBar'
+        'Navigation Footer Footer Footer Footer Footer ';
+        background-color: rgb(73, 144, 202);
+        color: rgb(189, 229, 255);
+        height: 400px;
+        width: 800px;
+    
+    }
+    .grid-container > div{
+        border: 1px solid;
+        padding:20px 0 0 20px ;
+    }
+    .item1{
+        grid-area: Header;
+    }
+    .item2{
+        grid-area: Navigation;
+    }
+    .item3{
+        grid-area: Main;
+    }
+    .item4{
+        grid-area: SideBar;
+    }
+    .item5{
+        grid-area: Footer;
+    }
+</style>
+<div class="grid-container">
+    <div class="item1">Header</div>
+    <div class="item2">Navigation</div>
+    <div class="item3">Main</div>
+    <div class="item4">SideBar</div>
+    <div class="item5">Footer</div>
+</div>

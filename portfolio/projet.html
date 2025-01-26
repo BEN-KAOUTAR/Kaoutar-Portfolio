@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+
+@media(max-width:995px){
+    nav.active{
+        display: block;
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+}
+
+     
+        .project {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .card {
+            background-color: rgb(39, 38, 38);
+            border-radius: 10px;
+            overflow: hidden;
+            border:2px solid grey;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px aqua;
+        }
+
+        .image {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .image img {
+            transform: scale(1.1);
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        .info h2 {
+            font-size: 1.8rem;
+            color: aliceblue;
+            margin-bottom: 15px;
+        }
+
+        .info p {
+            font-size: 1rem;
+            color: wheat;
+            margin-bottom: 20px;
+        }
+
+        .link {
+            font-size: 1.1rem;
+            color: aqua;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .link:hover {
+            color: #b74b4b;  
+        }
+
+       
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            .project {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .card {
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project {
+                grid-template-columns: 1fr;
+            }
+
+            .info h2 {
+                font-size: 1.6rem;
+            }
+
+            .info p {
+                font-size: 1rem;
+            }
+
+            .link {
+                font-size: 1rem;
+            }
+        }
+         .h{
+            font-size: 2.8rem;
+            text-align: center;
+            margin: 6rem 0;
+            margin-bottom: 4rem;
+            text-decoration: underline  wavy darkturquoise;
+         }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" >
+            <span class="logol" style="color:aquamarine ;">B</span>
+            <span class="logol">E</span>
+            <span class="logol" style="color:aquamarine ;">N</span>
+        </div>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="#">Project</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+    <section class="project">
+        <h2 class="h"> My Project</h2>
+        <div class="card">
+            <div class="image">
+                <img src="MYprofalio/image/B.jpg" alt="Project 1">
+            </div>
+            <div class="info">
+                <h2>TAF1</h2>
+                <p>The design of a website that sells clothes</p>
+                <a href="MYprofalio/TAF1.html" class="link">View More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="MYprofalio/image/A.PNG" alt="Project 2">
+            </div>
+            <div class="info">
+                <h2>TAF2</h2>
+                <p>distribution of a website using grid (html/css)</p>
+                <a href="MYprofalio/TAF1.html" class="link">View More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="MYprofalio/image/D.jpg" alt="Project 2">
+            </div>
+            <div class="info">
+                <h2>GRID 1</h2>
+                <p>distribution of a website using grid (html/css)</p>
+                <a href="MYprofalio/gridEX2.html" class="link">View More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="MYprofalio/image/C.jpg" alt="Project 2">
+            </div>
+            <div class="info">
+                <h2>GRID 2</h2>
+                <p>distribution of a website using grid (html/css)</p>
+                <a href="MYprofalio/gridEX4.html" class="link">View More</a>
+            </div>
+        </div>
+    </section>
+    <h3>&copy; B E N | Protfolio Kaoutar Ben hettouch</h3>
+</body>
+</html>

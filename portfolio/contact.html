@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+         .h{
+            font-size: 2.8rem;
+            text-align: center;
+            margin: 6rem 0;
+            margin-bottom: 4rem;
+            text-decoration: underline  wavy darkturquoise;
+         }
+        form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 5rem auto;
+            text-align: center;
+            margin-top: -4rem;
+        }
+         .ig .ib{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+         .ig .ib input,
+         .ig2 textarea{
+            width: 65%;
+            padding: 0.5rem;
+            font-size: 2rem;
+            border-radius: 2rem;
+            background: black;
+            border: 2px solid aqua;
+            margin: 0.9rem 0;
+        }
+        .ig2 textarea{
+            height: 20rem;
+            margin-right: 200px;
+            width: 80%;
+        }
+        button{
+            width: 80%;
+            padding: 1rem;
+            font-size: 2rem;
+            border-radius: 2rem;
+            background: aquamarine;
+            border: 2px solid aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem auto;
+            text-align: center;
+            margin-top: -3rem;
+        }
+        button:hover{
+            cursor: pointer;
+            box-shadow: 5px 5px 10px aqua;
+            border: 4px solid aqua;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" >
+            <span class="logol" style="color:aquamarine ;">B</span>
+            <span class="logol">E</span>
+            <span class="logol" style="color:aquamarine ;">N</span>
+        </div>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projet.html">Project</a>
+            <a href="#">contact</a>
+        </nav>
+    </header>
+        <section>
+            <h2 class="h"> Contact Me</h2>
+            <form action="">
+                <div class="ig">
+                    <div class="ib">
+                        <input type="text" placeholder="Full Nam">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+                    <div class="ib">
+                        <input type="tel" placeholder="Phone Number">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="ig2">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                </div>
+            </form>
+        </section>
+        <button type="button" value="Send Message">Send Message</button>
+        <h3>&copy; B E N | Protfolio Kaoutar Ben hettouch</h3>
+</body>
+</html>
